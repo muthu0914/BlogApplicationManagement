@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "07b9cbe0-5f87-4224-9892-116ee4303326",
+		"name": "Blog Portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BlogManagement",
+			"item": [
+				{
+					"name": "Create Blog Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"headerBlock\":\"headerInfo  \",\r\n    \"footerBlock\":\"footerInfo\",\r\n    \"bodyBlock\":\"Decrip\",\r\n    \"contactInfoBlock\":\"Contact\",\r\n    \"userId\":\"c04f38f3-0a68-4a93-ac70-494ca96f333e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/blogApplicationController/createBlogPost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"blogApplicationController",
+								"createBlogPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Blog Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"blogId\":\"49a96213-238b-43d7-be1b-a895da58706d\",\r\n    \"userId\":\"c04f38f3-0a68-4a93-ac70-494ca96f333e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/blogApplicationController/updateBlogPost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"blogApplicationController",
+								"updateBlogPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Blog By UserId",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"d54dc256-132f-45f4-a231-1e9f7bccacfe\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/blogApplicationController/getAllPostByUserId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"blogApplicationController",
+								"getAllPostByUserId"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Blog By Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"IN_PROGRESS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/blogApplicationController/getAllBlogPostByStatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"blogApplicationController",
+								"getAllBlogPostByStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Super User\",\r\n    \"email\":\"superuser@blogger.com\",\r\n    \"dateOfBirth\":\"1999-10-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/blogApplicationController/registerUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"blogApplicationController",
+								"registerUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
